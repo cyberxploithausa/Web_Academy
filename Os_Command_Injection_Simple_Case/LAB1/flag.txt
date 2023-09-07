@@ -1,0 +1,5 @@
+[H[2J[3JExploiting Os command injection vulnerability....
+[+] Command injection successfull
+[+] Output of the command is peter-UsHUtU
+62
+

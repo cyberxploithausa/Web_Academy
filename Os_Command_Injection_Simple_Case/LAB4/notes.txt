@@ -1,0 +1,9 @@
+# LAB 2
+	
+
+# Goal
+	The lab contains a Blind Command OS injection vulnerability.
+	It execute a shell command supplied by the user
+
+# Analysis
+	Exploit the blind OS command injection and cause it to delay for 10secs
